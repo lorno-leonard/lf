@@ -30,7 +30,7 @@ Class LF_Subscribers_List_Table extends LF_WP_List_Table {
 	function __construct() {
 
 		global $status, $page, $wpdb;
-		$filter_arr = [];	
+		$filter_arr = array();
 		$filter_string = '';
 		$table_subscribers = $wpdb->prefix . 'lf_subscribers';
 		$table_campaigns = $wpdb->prefix . 'lf_campaigns';
@@ -354,7 +354,7 @@ Class LF_Campaigns_List_Table extends LF_WP_List_Table {
 	function __construct() {
 
 		global $status, $page, $wpdb;
-		$filter_arr = [];	
+		$filter_arr = array();	
 		$filter_string = '';
 		$table_subscribers = $wpdb->prefix . 'lf_subscribers';
 		$table_campaigns = $wpdb->prefix . 'lf_campaigns';
